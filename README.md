@@ -39,7 +39,7 @@ A full-stack stock trading application that allows users to manage virtual portf
 1. Clone the repository:
 ```bash
 git clone https://github.com/barryxinpaul/SunLite.git
-cd SunLite
+cd backend
 ```
 
 2. Create and activate a virtual environment (recommended):
@@ -57,6 +57,12 @@ pip install -r requirements.txt
 ```
 DB_URI="your-mongodb-connection-string"
 ```
+5. Install Vite dependencies
+```
+cd ..
+cd frontend
+npm install
+```
 
 ## Running the Application
 
@@ -67,6 +73,12 @@ DB_URI="your-mongodb-connection-string"
 python run.py
 ```
 The server will start on http://127.0.0.1:8080
+
+3. Start the Vite frontend server:
+```bash
+npm run dev
+```
+The server will start on http://localhost:5173/
 
 ## API Endpoints
 
